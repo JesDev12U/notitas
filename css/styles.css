@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Jersey+25&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+html {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: "Mukta", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+    align-items: center;
+    background-color: bisque;
+    /* padding: 20px; */
+}
+
+header a {
+    display: flex;
+    width: 5rem;
+    height: 5rem;
+}
+
+header img {
+    border-radius: 50%;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    font-size: 1.5rem;
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: gray;
+}
+
+main {
+    padding: 20px;
+}
+
+.notes-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 20px;
+}
+
+.generate-note {
+    grid-column: 1;
+}
+
+.notes {
+    grid-column: 2;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.generate-note,
+.notes {
+    padding: 20px;
+}

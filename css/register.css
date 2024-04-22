@@ -1,0 +1,13 @@
+.content-form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content-form label {
+    grid-column: 1;
+}
+
+.content-form .inputs {
+    grid-column: 2;
+}
